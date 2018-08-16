@@ -8,7 +8,6 @@ import store from './store/store.js';
 import { Provider } from 'react-redux';
 //TODO: Use the Provider component to make your store available to
 //  the rest of your app.
-const store = store();
 
 ReactDOM.render(
   <Provider store={store}>
