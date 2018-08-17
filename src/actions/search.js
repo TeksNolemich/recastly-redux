@@ -9,6 +9,7 @@ var handleVideoSearch = q => {
     searchYouTube({key: YOUTUBE_API_KEY, query: q}, function (items) {
       // dispatch({type: 'HANDLE_VIDEO_SEARCH', videos: items});
       dispatch(changeVideoList(items));
+      dispatch(changeVideo(items[0]));
     });
   };
 };
